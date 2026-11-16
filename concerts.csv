@@ -1,2 +1,4 @@
-date;city;location;link
-
+date;time;city;location;link;active
+21.03.2027;20:00;Moers;Rockabilly Night;https://rockameier.de/;true
+17.04.2027;20:00;Duisburg;Pulp;https://rockameier.de/;true
+12.06.2027;19:30;Essen;Rock am Ruhrpott;https://rockameier.de/;true
