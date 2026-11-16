@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Familie Rockameier - Rockabilly aus Moers und Duisburg">
+<title>Familie Rockameier | Rockabilly</title>
+<style>
+:root{--black:#090909;--panel:#121212;--cream:#f2eadc;--red:#c5161d;--muted:#aaa;--line:#303030}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}.header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:17px max(20px,calc((100% - 1160px)/2));background:rgba(9,9,9,.94);border-bottom:1px solid #252525;backdrop-filter:blur(10px)}.logo{font-size:1.25rem;font-weight:900;text-decoration:none}.logo span,h1 span,h2 span{color:var(--red)}nav{display:flex;gap:22px}nav a{text-decoration:none;text-transform:uppercase;font-size:.78rem;font-weight:800}.menu{display:none;background:transparent;color:#fff;border:1px solid #444;padding:8px 11px}.hero{min-height:86svh;display:flex;align-items:center;background:radial-gradient(circle at 82% 35%,#531017 0,transparent 29%),linear-gradient(135deg,#151515,#050505)}.hero-inner{padding:80px 0}.eyebrow{color:var(--red);font-size:.77rem;letter-spacing:.2em;font-weight:900}.lead{font-size:clamp(1.05rem,2vw,1.4rem);color:#ddd}h1,h2{margin:.12em 0;line-height:.9;text-transform:uppercase;letter-spacing:-.045em}h1{font-size:clamp(4rem,10vw,8.7rem);max-width:1000px}h2{font-size:clamp(2.7rem,7vw,5.4rem)}.actions{display:flex;gap:13px;margin-top:30px}.btn{display:inline-block;padding:15px 21px;text-decoration:none;text-transform:uppercase;font-weight:900;border:0;cursor:pointer}.primary{background:var(--red);color:#fff}.secondary{border:2px solid var(--cream)}.section{padding:95px 0}.alt{background:var(--panel)}.two{display:grid;grid-template-columns:1fr 1fr;gap:70px}.muted{color:var(--muted)}.concert{display:grid;grid-template-columns:170px 1fr auto;gap:25px;align-items:center;padding:23px 0;border-top:1px solid var(--line)}.concert:last-child{border-bottom:1px solid var(--line)}.date{color:var(--red);font-weight:900;font-size:1.22rem}.concert strong{font-size:1.5rem}.concert a{text-decoration:none;font-weight:900}.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;margin-top:30px}.photo{min-height:290px;display:grid;place-items:center;background:linear-gradient(145deg,#262626,#0f0f0f);border:1px solid #323232;color:#666;font-weight:900;overflow:hidden;position:relative}.photo:after{content:"LIVE FOTO";letter-spacing:.15em}.form{display:flex;flex-direction:column;gap:13px}.row{display:grid;grid-template-columns:1fr 1fr;gap:13px}input,textarea{width:100%;padding:16px;color:#fff;background:#090909;border:1px solid #3a3a3a;font:inherit}textarea{resize:vertical}.status{min-height:24px;color:#ddd}.footer{padding:28px 0;display:flex;justify-content:space-between;color:#777;font-size:.85rem}.notice{padding:12px 14px;background:#191919;border-left:3px solid var(--red);font-size:.86rem;margin-top:15px}@media(max-width:720px){nav{display:none;position:absolute;top:63px;left:0;right:0;background:#0c0c0c;padding:18px 20px;flex-direction:column;border-bottom:1px solid #333}nav.open{display:flex}.menu{display:block}.section{padding:67px 0}.two,.gallery,.row{grid-template-columns:1fr}.photo{min-height:220px}.concert{grid-template-columns:1fr;gap:5px}.actions{flex-direction:column;text-align:center}.footer{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<header class="header"><a href="#home" class="logo">ROCK<span>AMEIER</span></a><button class="menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">MENÜ</button><nav id="nav"><a href="#band">Band</a><a href="#konzerte">Konzerte</a><a href="#bilder">Bilder</a><a href="#booking">Booking</a></nav></header>
+<main>
+<section class="hero" id="home"><div class="container hero-inner"><p class="eyebrow">ROCKABILLY FROM THE RUHRPOTT</p><h1>FAMILIE <span>ROCKAMEIER</span></h1><p class="lead">Rockabilly. Rock'n'Roll. Schweiß. Pomade.<br>Seit 2008 auf den Bühnen dieser Republik.</p><div class="actions"><a href="#konzerte" class="btn primary">Nächste Konzerte</a><a href="#booking" class="btn secondary">Band buchen</a></div></div></section>
+<section class="section" id="band"><div class="container two"><div><p class="eyebrow">DIE FAMILIE</p><h2>WIR SIND <span>ROCKAMEIER</span></h2></div><div><p>Vier Jungs irgendwo zwischen Ruhrgebiet und Niederrhein. Handgemachter Rockabilly, Rock'n'Roll und eine Live-Show mit ordentlich Energie.</p><p class="muted">Hier kann später euer ausführlicher Bandtext stehen.</p></div></div></section>
+<section class="section alt" id="konzerte"><div class="container"><p class="eyebrow">LIVE & LOUD</p><h2>NÄCHSTE <span>KONZERTE</span></h2><div id="concertList"></div></div></section>
+<section class="section" id="bilder"><div class="container"><p class="eyebrow">DIE FAMILIE IN ACTION</p><h2>BILDER <span>GALERIE</span></h2><div class="gallery"><div class="photo"></div><div class="photo"></div><div class="photo"></div></div><p class="muted">Die Platzhalter können direkt durch eure eigenen Bilder ersetzt werden.</p></div></section>
+<section class="section alt" id="booking"><div class="container two"><div><p class="eyebrow">BOOKING</p><h2>IHR WOLLT <span>ROCKAMEIER?</span></h2><p>Festival, Stadtfest, Club oder private Veranstaltung? Schickt uns eure Anfrage.</p></div><form class="form" id="bookingForm"><div class="row"><input name="name" placeholder="Dein Name" required><input type="email" name="email" placeholder="E-Mail" required></div><input name="location" placeholder="Veranstaltungsort"><input type="date" name="date"><textarea name="message" rows="6" placeholder="Erzähl uns von eurer Veranstaltung..." required></textarea><button class="btn primary" type="submit">ANFRAGE SENDEN</button><div id="formStatus" class="status" aria-live="polite"></div><div class="notice">Demo-Version: Das Formular validiert die Eingaben lokal, versendet aber noch keine E-Mail.</div></form></div></section>
+</main>
+<footer><div class="container footer"><div>© <span id="year"></span> Familie Rockameier</div><div><a href="#">Impressum</a> · <a href="#">Datenschutz</a></div></div></footer>
+<script>
+async function loadConcerts() {
+  const list = document.getElementById('concertList');
+
+  try {
+    const response = await fetch('concerts.csv', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+    const csv = await response.text();
+    const lines = csv.replace(/^\uFEFF/, '').trim().split(/\r?\n/);
+    if (lines.length < 2) throw new Error('Die CSV-Datei enthält keine Konzertdaten.');
+
+    const headers = lines[0].split(';').map(value => value.trim());
+    const concerts = lines.slice(1).filter(Boolean).map(line => {
+      const values = line.split(';').map(value => value.trim());
+      return Object.fromEntries(headers.map((header, index) => [header, values[index] || '']));
+    });
+
+    list.innerHTML = '';
+    concerts.forEach(concert => {
+      const item = document.createElement('article');
+      item.className = 'concert';
+
+      const date = document.createElement('div');
+      date.className = 'date';
+      date.textContent = concert.date;
+
+      const info = document.createElement('div');
+      const city = document.createElement('strong');
+      city.textContent = concert.city;
+      const location = document.createElement('div');
+      location.className = 'muted';
+      location.textContent = concert.location;
+      info.append(city, location);
+
+      const link = document.createElement('a');
+      link.href = concert.link || '#booking';
+      link.textContent = concert.link ? 'DETAILS →' : 'ANFRAGE →';
+      if (concert.link && concert.link.startsWith('http')) {
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+      }
+
+      item.append(date, info, link);
+      list.appendChild(item);
+    });
+  } catch (error) {
+    list.innerHTML = '<p class="notice">Die Konzerttermine konnten nicht geladen werden. Bitte öffne die Website über einen lokalen oder öffentlichen Webserver und prüfe, ob concerts.csv neben der HTML-Datei liegt.</p>';
+    console.error('Fehler beim Laden der Konzertdaten:', error);
+  }
+}
+
+loadConcerts();
+document.getElementById('year').textContent=new Date().getFullYear();
+const menuBtn=document.getElementById('menuBtn'),nav=document.getElementById('nav');menuBtn.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuBtn.setAttribute('aria-expanded','false')}));
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const form=e.currentTarget,status=document.getElementById('formStatus');if(!form.checkValidity()){form.reportValidity();status.textContent='Bitte fülle die Pflichtfelder aus.';return}status.textContent='Danke! Die Anfrage ist in dieser Demo lokal geprüft. Der E-Mail-Versand kann als nächster Schritt angebunden werden.'});
+</script>
+</body>
+</html>
